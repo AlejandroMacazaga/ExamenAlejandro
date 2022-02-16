@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="localidades">
+        <item>Vitoria-Gasteiz;https://api.tutiempo.net/xml/?lan=es&amp;apid=qsTX4X4qq44as6Q&amp;lid=8043</item>
+        <item>Bilbao; https://api.tutiempo.net/xml/?lan=es&amp;apid=qsTX4X4qq44as6Q&amp;lid=8050</item>
+        <item>Donostia-San Sebastian;https://api.tutiempo.net/xml/?lan=es&amp;apid=qsTX4X4qq44as6Q&amp;lid=4917</item>
+    </string-array>
+
+</resources>

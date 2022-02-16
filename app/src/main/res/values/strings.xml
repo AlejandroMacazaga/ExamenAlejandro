@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ExamenAlejandro</string>
+    <string name="app_title">Examen Alejandro</string>
+    <string name="btnEj1">BASE DE DATOS DE LIBROS</string>
+    <string name="btnEj2">EL TIEMPO</string>
+    <string name="btnSalir">SALIR</string>
+    <string name="salir_title">SALIR</string>
+    <string name="salir_pregunta">¿Desea salir de la aplicacion?</string>
+    <string name="SI">SI</string>
+    <string name="NO">NO</string>
+    <string name="tituloEjercicio1">Mi Base de Datos de Libros</string>
+    <string name="nuevo_libro">NUEVO LIBRO</string>
+    <string name="listado_libros">LISTADO LIBROS</string>
+    <string name="volver">VOLVER</string>
+    <string name="titulo">TITULO</string>
+    <string name="titulo_nuevo_libro">DATOS NUEVO LIBRO</string>
+    <string name="autor">AUTOR</string>
+    <string name="isbn">ISBN</string>
+    <string name="editorial">EDITORIAL</string>
+    <string name="numpaginas">NUM. PAGINAS</string>
+    <string name="insertar">insertar</string>
+    <string name="cancelar">cancelar</string>
+    <string name="leido">leido</string>
+    <string name="porleer">por leer</string>
+    <string name="titulo_listado_libro">Listado de libros</string>
+    <string name="eliminar">eliminar</string>
+    <string name="titulo_detalle_libro">INFORMACION DETALLADA DEL LIBRO</string>
+    <string name="titulo_tiempo">El Tiempo</string>
+    <string name="elige">Elige Localidad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fechahora">FECHA/HORA</string>
+    <string name="temp">TEMP</string>
+
+</resources>

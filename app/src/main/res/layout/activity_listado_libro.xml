@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListadoLibro">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="377dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo_listado_libro"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="377dp"
+        android:layout_height="123dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <RadioButton
+            android:id="@+id/rbLeidos"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="@string/leido" />
+
+        <RadioButton
+            android:id="@+id/rbPorLeer"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="@string/porleer" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/listViewLibros"
+        android:layout_width="372dp"
+        android:layout_height="267dp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <Button
+        android:id="@+id/btnVolverListado"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toEndOf="@+id/listViewLibros"
+        app:layout_constraintTop_toBottomOf="@+id/listViewLibros" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

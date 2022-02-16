@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoLibro">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="379dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo_nuevo_libro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <EditText
+        android:id="@+id/inputAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/inputTitulo" />
+
+    <EditText
+        android:id="@+id/inputISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/inputAutor" />
+
+    <EditText
+        android:id="@+id/inputEditorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/inputISBN" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/titulo"
+        app:layout_constraintEnd_toStartOf="@+id/inputTitulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="103dp"
+        android:layout_height="43dp"
+        android:text="@string/autor"
+        app:layout_constraintEnd_toStartOf="@+id/inputTitulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="103dp"
+        android:layout_height="43dp"
+        android:text="@string/isbn"
+        app:layout_constraintEnd_toStartOf="@+id/inputTitulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="103dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/editorial"
+        app:layout_constraintEnd_toStartOf="@+id/inputTitulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="103dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/numpaginas"
+        app:layout_constraintEnd_toStartOf="@+id/inputTitulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/inputNumPaginas"
+        android:layout_width="77dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/inputEditorial" />
+
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="190dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/insertar"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="184dp"
+        android:layout_height="58dp"
+        android:text="@string/cancelar"
+        app:layout_constraintStart_toEndOf="@+id/btnInsertar"
+        app:layout_constraintTop_toTopOf="@+id/btnInsertar" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="146dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/volver"
+        app:layout_constraintStart_toEndOf="@+id/btnInsertar"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelar" />
+
+    <CheckBox
+        android:id="@+id/checkboxleido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/leido"
+        app:layout_constraintStart_toEndOf="@+id/inputNumPaginas"
+        app:layout_constraintTop_toBottomOf="@+id/inputEditorial" />
+</androidx.constraintlayout.widget.ConstraintLayout>
